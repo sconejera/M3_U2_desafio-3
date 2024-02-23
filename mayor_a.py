@@ -24,7 +24,7 @@ venta = int(sys.argv[1])
 # Filtro de datos
 filtro = {k:v for k,v in ventas.items() if v  > venta}
 
-# Mostrar Resultado
+# output
 print(filtro)
 
 

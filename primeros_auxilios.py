@@ -1,5 +1,5 @@
-
-while True:
+# inicio de bucle infinito
+while True: 
     responde_estimulos = input("¿Responde a estímulos? (s/n): ")
     if responde_estimulos == 's':
         print("Valorar la necesidad de llevar al hospital más cercano")
@@ -14,6 +14,8 @@ while True:
         else:
             print("Administrar 5 Ventilaciones y llamar a Ambulancia")
             signos_de_vida = input("¿Signos de Vida? (s/n): ")
+            
+            #inicio bucle signos de vida
             while signos_de_vida == 'n':
                 print("Administrar Compresiones Torácicas hasta que llegue ambulancia")
                 llego_ambulancia = input("¿Llegó la Ambulancia? (s/n): ")
@@ -27,5 +29,6 @@ while True:
                 llego_ambulancia = input("¿Llegó la Ambulancia? (s/n): ")
                 if llego_ambulancia == 's':
                     print("Fin")
+    
+    # termino de bucle infinito
     break
-
